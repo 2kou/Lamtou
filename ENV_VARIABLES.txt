@@ -1,0 +1,58 @@
+VARIABLES D'ENVIRONNEMENT POUR RENDER.COM
+=============================================
+
+Copiez-collez ces variables exactement dans la section "Environment" de votre service Render.com :
+
+API_ID=29177661
+
+API_HASH=a8639172fa8d35dbfd8ea46286d349ab
+
+BOT_TOKEN=7573497633:AAHk9K15yTCiJP-zruJrc9v8eK8I9XhjyH4
+
+ADMIN_ID=1190237801
+
+CONFIGURATION RENDER.COM
+========================
+
+Build Command:
+pip install -r requirements.txt
+
+Start Command:
+python main.py
+
+Environment:
+Production
+
+Instance Type:
+Free (ou Starter selon vos besoins)
+
+Auto-Deploy:
+Yes (recommandé)
+
+Health Check Path:
+/ (optionnel)
+
+NOTES IMPORTANTES
+================
+
+1. Ces variables sont déjà configurées pour votre bot Téléfoot
+2. ADMIN_ID correspond à votre ID Telegram personnel
+3. Le BOT_TOKEN est celui de @Googlekdnsbot
+4. API_ID et API_HASH sont vos credentials Telegram
+
+APRÈS DÉPLOIEMENT
+=================
+
+Le bot enverra automatiquement un message de confirmation avec :
+- Statut du déploiement
+- URL du service
+- Nombre d'utilisateurs chargés
+- Confirmation du système de réactivation automatique
+
+SYSTÈME DE RÉACTIVATION
+=======================
+
+Pour réactiver le bot en cas de problème, envoyez simplement :
+"réactiver bot automatique"
+
+Le bot répondra automatiquement "ok" et Render redémarrera le service.
